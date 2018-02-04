@@ -3,7 +3,7 @@ require_once 'includes\app.php';
 echo 'sdd';
 //db_insert();
 ?>
-<!--<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 	<head>
 		<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
@@ -14,4 +14,4 @@ echo 'sdd';
 		<div id="response"></div>
 		
 	</body>
-</html>-->
+</html>
