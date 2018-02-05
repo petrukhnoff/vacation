@@ -12,7 +12,7 @@
    * **[config.php](includes/config.php)** - database connection configuration.
    * **[autoload.php](includes/autoload.php)**: - autoload classes.
 
-## Tnstallation
+## Installation
 * Cloning files on the repository.
 * Import scheme_db.sql into database.
 * In config.php configure the connection to the database.
