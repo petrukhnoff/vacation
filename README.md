@@ -1,10 +1,12 @@
 # vacation
 
+## Structure
+
 index.php - file interface.
 
 scheme_db.sql - database dump.
 
-includes: 
+includes:
   classes: - general classes.
 
   app.php: - connection to the database,  includes files - config.php, autoload.php.
