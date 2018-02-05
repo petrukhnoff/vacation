@@ -29,7 +29,7 @@ class CustomersVacations extends Customers {
      return $this->availableDays;
   }
 
-    public function setAllDays($allDays) {
+  public function setAllDays($allDays) {
     $this->allDays = $allDays;
   }
   
