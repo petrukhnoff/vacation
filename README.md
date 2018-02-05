@@ -2,15 +2,18 @@
 
 ## Structure
 
-index.php - file interface.
+* **[index.php](index.php)** - file interface.
 
-scheme_db.sql - database dump.
+* **[scheme_db.sql](scheme_db.sql)** - database dump.
 
-includes:
-  classes: - general classes.
+* **[includes](includes/):**
+   * **[classes](includes/classes/):** - general classes.
+   * **[app.php](includes/app.php):** - connection to the database,  includes files - config.php, autoload.php.
+   * **[config.php](includes/config.php)** database connection configuration.
+   * **[autoload.php](includes/autoload.php)**: - autoload classes.
 
-  app.php: - connection to the database,  includes files - config.php, autoload.php.
-
-  config.php: - database connection configuration.
-
-  autoload.php: - autoload classes.
+## Tnstallation
+* Cloning files on the repository
+* Import scheme_db.sql into database
+* in config.php configure the connection to the database
+* use index.pxp as an interface
