@@ -9,11 +9,11 @@
 * **[includes](includes/):**
    * **[classes](includes/classes/):** - general classes.
    * **[app.php](includes/app.php):** - connection to the database,  includes files - config.php, autoload.php.
-   * **[config.php](includes/config.php)** database connection configuration.
+   * **[config.php](includes/config.php)** - database connection configuration.
    * **[autoload.php](includes/autoload.php)**: - autoload classes.
 
 ## Tnstallation
-* Cloning files on the repository
-* Import scheme_db.sql into database
-* in config.php configure the connection to the database
-* use index.pxp as an interface
+* Cloning files on the repository.
+* Import scheme_db.sql into database.
+* In config.php configure the connection to the database.
+* Use index.pxp as an interface.
