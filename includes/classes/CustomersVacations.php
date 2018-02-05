@@ -3,12 +3,14 @@ class CustomersVacations extends Customers {
   private $allDays;
   private $usedDays;
   private $requestDays;
-  
+  private $availableDays;
+
   public function __construct($id, $name, $allDays, $usedDays = 0, $requestDays = 0)  {
     parent :: __construct($id, $name);
     $this->allDays = $allDays;
     $this->usedDays = $usedDays;
     $this->requestDays = $requestDays;
+    $this->availableDays = $allDays - $usedDays;
   }
   
   public function getAllDays() {
@@ -23,7 +25,11 @@ class CustomersVacations extends Customers {
     return $this->requestDays;
   }
   
-  public function setAllDays($allDays) {
+  public function getAvailableDays() {
+     return $this->availableDays;
+  }
+
+    public function setAllDays($allDays) {
     $this->allDays = $allDays;
   }
   
@@ -36,7 +42,7 @@ class CustomersVacations extends Customers {
   }
   
   public function checkVacations() {
-    if ($this->allDays >= $this->requestDays) {
+    if (($this->availableDays) >= $this->requestDays) {
       return true;
     }
     $this->requestDays = 0;
@@ -45,7 +51,6 @@ class CustomersVacations extends Customers {
   
   public function confirmVacations($bConfirm) {
     if ($bConfirm) {
-      $this->allDays = $this->allDays - $this->requestDays;
       $this->usedDays = $this->usedDays + $this->requestDays;
       $this->requestDays = 0;
     } else {
