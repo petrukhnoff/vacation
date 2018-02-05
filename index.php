@@ -110,8 +110,7 @@ $db->close();
       Confirm vacation request:<br><br>
         <?php 
         foreach ($aCustomersVacations as $iCId => $obj) {
-          $iAvailable = $obj->getAllDays() - $obj->getUsedDays();
-          echo 'customer: ' . $obj->getName() . ', requested days:'.$obj->getRequestDays().', used days: '.$obj->getUsedDays().', number of days available: '.$obj->getAllDays().'<br>
+          echo 'customer: ' . $obj->getName() . ', requested days:'.$obj->getRequestDays().', used days: '.$obj->getUsedDays().', number of days available: '.$obj->getAvailableDays().'<br>
             <input type="radio" name="confirm_vacation_request['.$obj->getId().']" value="" checked="checked">Ignore
             <input type="radio" name="confirm_vacation_request['.$obj->getId().']" value="yes">yes
             <input type="radio" name="confirm_vacation_request['.$obj->getId().']" value="no">no<br>';
