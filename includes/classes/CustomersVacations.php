@@ -42,7 +42,7 @@ class CustomersVacations extends Customers {
   }
   
   public function checkVacations() {
-    if (($this->availableDays) >= $this->requestDays) {
+    if ($this->availableDays >= $this->requestDays) {
       return true;
     }
     $this->requestDays = 0;
